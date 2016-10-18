@@ -31,4 +31,6 @@ print(sum([1 for i in L if i in V]))#Print the count all the vowels in L
 print(L[::18])#Print each 18th symbol of the string
 
 a = (L[::18])
-print(a.swapcase())#Opposite to the original (print A if the letter is a, print a if A etc.)
+
+for i in range(len(a)):#Vertical list
+	print(a[i].swapcase())#Opposite to the original (print A if the letter is a, print a if A etc.)
