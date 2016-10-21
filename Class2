@@ -31,5 +31,5 @@ print(dict)
 for x in sorted(dict, key=str):  #Print by alphabet
     print (x,dict[x])
 
-for x in sorted(dict, key=dict.get, reverse=True):  #Print by the frequency numbers
+for x in sorted(dict, key=dict.get, reverse = True):  #Print by the frequency numbers
     print (x,dict[x])
