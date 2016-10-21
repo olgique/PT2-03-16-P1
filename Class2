@@ -1,3 +1,4 @@
+
 L = '''Beautiful is better than ugly.
 Explicit is better than implicit.
 Simple is better than complex.
@@ -26,3 +27,9 @@ for char in L:
   dict[char] += 1
 
 print(dict)
+
+for x in sorted(dict,key=str):  #Print by alphabet
+    print (x,dict[x])
+
+for x in sorted(dict, key=dict.get, reverse=True):  #Print by the frequency numbers
+    print (x,dict[x])
