@@ -1,0 +1,11 @@
+str_input = 'a*&1i'
+dict = ['airplane','airport','apple','ball']
+
+def autocomplete(str_input, dict):
+    words_found = []
+    for word in dict:
+        if word.startswith('ai'):
+            words_found.append(word)
+    print(words_found[:5])
+
+autocomplete(str_input, dict)
