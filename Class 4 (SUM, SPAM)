@@ -1,0 +1,14 @@
+#SUM http://stackoverflow.com/questions/11520236/how-to-write-a-python-function-that-adds-all-arguments
+def func_sum(*arguments):
+    print (sum(arguments))
+
+func_sum(1,2,3)
+
+
+#SPAM
+def spam(number):
+    print('egg' *number)
+    
+spam(1)
+spam(3)
+spam(12)
