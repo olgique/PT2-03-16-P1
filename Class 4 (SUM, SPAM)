@@ -1,3 +1,9 @@
+#TO_WEIRD:
+my_string = "Weird string case"
+result_string = ""
+print("".join(char.upper() if i % 2 else char for i, char in enumerate(my_string.lower())))
+
+
 #SUM http://stackoverflow.com/questions/11520236/how-to-write-a-python-function-that-adds-all-arguments
 def func_sum(*arguments):
     print (sum(arguments))
