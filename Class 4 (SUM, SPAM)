@@ -1,4 +1,4 @@
-#TO_WEIRD:
+#TO_WEIRD http://stackoverflow.com/questions/29317937/how-can-i-capitalize-a-character-with-an-odd-numbered-index-in-a-string
 my_string = "Weird string case"
 result_string = ""
 print("".join(char.upper() if i % 2 else char for i, char in enumerate(my_string.lower())))
