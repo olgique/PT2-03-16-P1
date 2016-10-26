@@ -12,3 +12,8 @@ def spam(number):
 spam(1)
 spam(3)
 spam(12)
+
+
+#INTEGER TO WORDS
+from num2words import num2words
+print(num2words((123456), lang='en'))
