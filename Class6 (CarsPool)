@@ -1,3 +1,4 @@
+# Engine_engine-type
 class Engine(object):
      number = 0
      def __init__(self):
@@ -15,6 +16,7 @@ class Engine(object):
          else:
              self.tank = 60
 
+#Price_price-reduce
 class Price(object):
     distance = 0
     def __init__(self):
