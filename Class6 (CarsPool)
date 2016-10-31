@@ -1,1 +1,26 @@
+class Engine(object):
+     number = 0
+     def __init__(self):
+         Engine.number += 1
+         if Engine.number % 3 == 0:
+             self.engine_type = 'Diesel'
+             self.consumption = 6
+             self.cost = 1.8
+         else:
+             self.engine_type = 'Gasoil'
+             self.consumption = 8
+             self.cost= 2.4
+         if Engine.number % 5 == 0:
+             self.tank = 75
+         else:
+             self.tank = 60
 
+class Price(object):
+    distance = 0
+    def __init__(self):
+        Price.distance += 1
+        self.car_cost = 10000
+        self.gasoil_price_reduce = 9.5
+        self.diesel_price_reduce = 10.5
+        if Price.distance % 1000 == 0:
+            self.car_cost -= self.gasoil_price_reduce
