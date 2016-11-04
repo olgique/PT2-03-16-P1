@@ -1,0 +1,12 @@
+def my_gen():
+	yield 'a'
+	yield 'b'
+	yield 'c'
+
+gen = my_gen()
+
+while True:
+    try:
+        print(next(gen)) #Retrieve the next item from the iterator by calling its next() method. If default is given, it is returned if the iterator is exhausted, otherwise StopIteration is raised.
+    except StopIteration: #Raised by an iterator‘s next() method to signal that there are no further values.
+        print('Stop it!')
