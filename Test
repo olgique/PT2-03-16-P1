@@ -1,0 +1,110 @@
+import subprocess
+
+def test1call():
+	retcode = subprocess.call("rpcinfo -p | grep nfs", shell=True)
+	if retcode == 0:
+		print("Success")
+	else:
+		print ("Failure")
+
+
+def main():
+	test1call()
+
+if __name__ == '__main__':
+		main()
+
+
+
+def test2call():
+	retcode = subprocess.call("cat /proc/filesystems | grep nfs", shell=True)
+	if retcode == 0:
+		print("Success")
+	else:
+		print ("Failure")
+
+
+def main():
+	test2call()
+
+if __name__ == '__main__':
+		main()
+
+
+
+def test3call():
+	retcode = subprocess.call("rpcinfo -p | grep portmap", shell=True)
+	if retcode == 0:
+		print("Success")
+	else:
+		print ("Failure")
+
+
+def main():
+	test3call()
+
+if __name__ == '__main__':
+		main()
+
+
+
+def test4call():
+	retcode = subprocess.call("/home/nfs/*(ro,sync)", shell=True)
+	if retcode == 0:
+		print("Success")
+	else:
+		print ("Failure")
+
+
+def main():
+	test4call()
+
+if __name__ == '__main__':
+		main()
+
+
+def test5call():
+	retcode = subprocess.call("touch /home/nfs/nfs-test-file", shell=True)
+	if retcode == 0:
+		print("Success")
+	else:
+		print ("Failure")
+
+
+def main():
+	test5call()
+
+if __name__ == '__main__':
+		main()
+
+
+
+def test6call():
+	retcode = subprocess.call("rm -rf nfs-test-file", shell=True)
+	if retcode == 0:
+		print("Success")
+	else:
+		print ("Failure")
+
+
+def main():
+	test6call()
+
+if __name__ == '__main__':
+		main()
+
+
+
+def test7call():
+	retcode = subprocess.call("service iptables stop", shell=True)
+	if retcode == 0:
+		print("Success")
+	else:
+		print ("Failure")
+
+
+def main():
+	test7call()
+
+if __name__ == '__main__':
+		main()
