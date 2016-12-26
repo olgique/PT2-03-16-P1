@@ -1,4 +1,12 @@
-ls - lha /var/log | grep *1 | grep -v '\.2' | less
-
-# Listening all files in human readable mode in /var/log and finding all files with 1 (with a different number of preceding symbols)
+ls -lha /var/log | grep *1 | grep -v '\.2' | less
+# Listing all files in human readable mode in /var/log and finding all files with 1 (with a different number of preceding symbols)
 # except files with .2 (\ - quoting) and using the pager less
+
+#To execute the file logs_with1.txt:
+sudo nano /etc/rc.local
+#Editing the file:
+
+#!/bin/sh -e
+# rc.local
+/var/log/logs_with1.txt
+exit 0
