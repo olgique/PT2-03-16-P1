@@ -1,0 +1,20 @@
+# Settings -> Storage -> Controller: SATA -> Adds hard disk
+
+# Getting list of hard drives:
+sudo fdisk -l
+
+# Partition of the /dev/sdb device:
+sudo fdisk /dev/sdb
+# Command (m for help): 'n' for creating a new partition, 'p' for creating the partition as primary,
+# '1' for specifying the partition number and using defaults for begin and end range for partition size
+# and finally 'w' for making changes permanent
+
+# Formatting the partition:
+mkfs.ext4 /dev/sdb1
+
+# Mounting the partition:
+mkdir -p /media/newhd
+mount /dev/sdb1 /media/newhd
+
+# Putting the following entry into /etc/fstab file:
+/dev/sdb1               /media/newhd           ext4    defaults        1 2 
